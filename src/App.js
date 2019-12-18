@@ -7,6 +7,12 @@ import LifeCycleA from './Components/LifeCycleA';
 import Main from './Axios Requests/Main';
 import EditUserModal from './Axios Requests/EditUserModal';
 
+
+import {Provider} from 'react-redux'
+import store from './Redux/Store'
+import UserContainer from './Redux_Components/UserContainer';
+import PostForm from './Redux_Components/PostForm';
+
 function App() {
   return (
     <div className="App">
@@ -16,8 +22,13 @@ function App() {
       {/* <LifeCycleA/> */}
       <Main/>
 
+      {/* <Provider store={store}>
+        <UserContainer/>
+        <PostForm/>
+      </Provider> */}
+
     </div>
   );
-}
+} 
 
 export default App;
